@@ -22,10 +22,11 @@ export default class Matrix extends Component {
       selectedColor: newColor
     })
   }
+
   render() {
     return (
       <div id="app">
-        <ColorSelector />
+        <ColorSelector setSelectedColor={this.setSelectedColor}/>
         <div id="matrix">
           {this.genMatrix()}
         </div>
